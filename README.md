@@ -68,7 +68,7 @@ This process our Sass files and compiles into one css file where
 Upgrades
 Depending when you are dowloading this project, you might have to upgrade from one ghost version to another.
 
-Spines.db
+espinas.db
 It’s sample database of photos and articles from wikipedia and unsplash for the purpose of testing and developing the themes.
 Admin Credential
 holaboyperu@hotmail.com

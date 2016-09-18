@@ -40,7 +40,7 @@ config = {
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(__dirname, '/node_modules/ghost/content/data/ghost-dev.db')
+                filename: path.join(__dirname, '/node_modules/ghost/content/data/espinas.db')
             },
             debug: false
         },

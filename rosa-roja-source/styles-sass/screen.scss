@@ -1,0 +1,56 @@
+// Main Sass file
+
+@import "bourbon";
+@import "neat";
+
+@import "casper-temp"; // Great to start making small changes to the casper blog.
+@import "base/base";
+
+
+
+// @import "index";
+
+// @import "nav";
+// @import "post";
+// @import "author";
+// @import "footer";
+
+// @import "social";
+
+// @import "cards";
+
+
+.page-description {
+  font-family: "Georgia", serif;
+}
+.page-title {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 300;
+}
+
+
+
+// .author-image {
+//   box-sizing: border-box;
+//   width: 80px;
+//   height: 80px;
+//   border-radius: 100%;
+//   padding: 6px;
+//   background: #fff;
+//   .img {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     background-size: cover;
+//     background-position: center center;
+//     border-radius: 100%;
+//   }
+// }
+
+// .hidden {
+//     text-indent: -9999px;
+//     visibility: hidden;
+//     display: none;
+// }
+
+

@@ -8,21 +8,21 @@ var reload = browserSync.reload;
 
 
 // Gulp Task that compiles Sass files.
-// gulp.task('styles', function () {
-
-//     return gulp.src('rosa-roja-sass/**/*.scss')
-//         .pipe(sass({
-//             includePaths: ['styles'].concat(neat)
-//         }))
-//         .pipe(gulp.dest('content/themes/rosa-roja/assets/css'))
-//         .pipe(reload({stream:true}));
-// });
-
-
-
 gulp.task('styles', function () {
-  console.log("STYLE TASK WORKING");
+
+    return gulp.src('rosa-roja-source/styles-sass/**/*.scss')
+        .pipe(sass({
+            includePaths: ['styles'].concat(neat)
+        }))
+        .pipe(gulp.dest('node_modules/ghost/content/themes/rosa-roja/assets/css'))
+        .pipe(reload({stream:true}));
 });
+
+
+
+// gulp.task('styles', function () {
+//   console.log("STYLE TASK WORKING");
+// });
 
 
 gulp.task('scripts', function() {
@@ -48,16 +48,11 @@ gulp.task('browser-sync', function() {
 // this wraps everything and loads the ghost server
 gulp.task('ghost', ['styles', 'scripts','browser-sync','watch'], function() {  
     var ghost = require('ghost');
-    console.log("Ghost is a .. " + typeof(ghost));
     process.env.NODE_ENV = 'development';
     ghost({ config: __dirname + '/ghost-config.js' }).then(function (ghostServer) {
         ghostServer.start();
     });
 });
 
-
-// gulp.task('default', function () {
-//   console.log("GULP IS WORKING!!!");
-// });
 
 gulp.task('default', ['ghost']);
