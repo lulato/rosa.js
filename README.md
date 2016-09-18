@@ -16,7 +16,11 @@ I recomend doing the manual setup so you understand a bit better of how everythi
 
 Automatic Setup
 
+run
 npm install
+
+gulp
+
 Coming Soon. (Local Server)
 
 Manual Setup

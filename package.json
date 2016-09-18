@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/lulato/rosa.js#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.16.0",
+    "ghost": "^0.11.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
   }
 }
