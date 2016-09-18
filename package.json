@@ -1,0 +1,25 @@
+{
+  "name": "lulato-rosajs",
+  "version": "0.0.1",
+  "description": "Rosa.js is a CMS theme builder using Gulp Sass Bourbon.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lulato/rosa.js.git"
+  },
+  "keywords": [
+    "Sass",
+    "Theme",
+    "Bourbon",
+    "Neat"
+  ],
+  "author": "Luis Ricardo La Torre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lulato/rosa.js/issues"
+  },
+  "homepage": "https://github.com/lulato/rosa.js#readme"
+}
