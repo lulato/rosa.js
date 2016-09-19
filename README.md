@@ -2,30 +2,25 @@
 
 Rosa.js is a CMS theme builder using Gulp Sass Bourbon.
 
-Story
+### Story
 
 I decided to create Rosa.js because I got really interested on content media and on how to display the content. I will be buidling multiple blogs and digital magazines, so I need a way to create site by adjusting some Sass variables and quickly get something up.  The word Rosa either means rose (flower) or pink (color) depending on the context. The name has two inside meanings for me, the first one is that Rosa was my grandmother’s name, and the second is that I’m from Florida, spanish word that literally means “full of flowers”. I’m hoping to get the Florida Dev community to do more open source projects that are flower related.
 
 
-Level of opination 1–10 (5)
+**Level of opination 1–10 (5)** 
 Enough flexibility, but with basic guidance.
 
 
-Getting Started
+### Getting Started
 I recomend doing the manual setup so you understand a bit better of how everything works so you can your hands dirty. If you are in a hurry or in a hack-athon, just do the automatic setup. I am using Ghost CSM, mainly because I want to keep my whole stack in Javascript at the moment, but feel free to change your CMS by editing the gulpfile on the manual setup. 
 
-Automatic Setup
-
-run
-npm install
-
-gulp
-
-Coming Soon. (Local Server)
-
-Manual Setup
+##### Automatic Setup
+- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
+- Run: `npm install`
+- Run: `gulp`
 
 
+##### Manual Setup
 Browsersync will help me with the auto-refresh in multiple devices, so I can see the chages in real time in the phone.
 Sass will help me devide the stylesheets into smaller files for each of it’s purposes.
 I use neat from bourbon to set up basic grid. (Optional)
@@ -88,3 +83,9 @@ Duplicate Casper folder, Name it your Theme Name
 Duplicate the Sass folder. Name it your Theme Name Sass
 
 Adjust the Gulpfile.js accordantly
+
+SCRIPT
+Replace ghost-dev.db
+This can be done in a script by asking Danny
+duplicate the folder called casper 
+rename casper copy rosa-roja
