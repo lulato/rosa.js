@@ -4,7 +4,8 @@
   "description": "Rosa.js is a CMS theme builder using Gulp Sass Bourbon.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "duplicate": "cp -R  node_modules/ghost/content/themes/casper/ node_modules/ghost/content/themes/casper-copy/"
   },
   "repository": {
     "type": "git",
