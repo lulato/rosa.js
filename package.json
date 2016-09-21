@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "duplicate": "cp -R  node_modules/ghost/content/themes/casper/ node_modules/ghost/content/themes/casper-copy/"
+    "duplicate": "cp -R  node_modules/ghost/content/themes/casper/ node_modules/ghost/content/themes/casper-copy/",
+    "rename": "mv casper-copy rosa-roja"
   },
   "repository": {
     "type": "git",
