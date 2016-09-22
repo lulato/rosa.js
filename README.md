@@ -1,9 +1,11 @@
 # Rosa.js Project
 
 Rosa.js is a CMS theme builder using Gulp Sass Bourbon.
+![rosa-roja.js](https://raw.githubusercontent.com/lulato/rosa.js/master/rosa-roja-source/static-assets/rosa.js.jpeg)
+Photo by [João Silas](https://unsplash.com/photos/Z5M06BfTTkc),
+Edited by [Rirod](https://www.instagram.com/rirod180/)
 
 ### Story
-
 I decided to create Rosa.js because I got really interested on content media and on how to display the content. I will be building multiple blogs and digital magazines, so I need a way to create site by adjusting some Sass variables and quickly get something up.  The word Rosa either means rose (flower) or pink (color) depending on the context. The name has two inside meanings for me, the first one is that Rosa was my grandmother’s name, and the second is that I’m from Florida,  a Spanish word that literally means “full of flowers”. I’m hoping to get the Florida Dev community to do more open source projects that are flower related.
 
 
