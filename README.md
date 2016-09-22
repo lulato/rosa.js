@@ -4,15 +4,15 @@ Rosa.js is a CMS theme builder using Gulp Sass Bourbon.
 
 ### Story
 
-I decided to create Rosa.js because I got really interested on content media and on how to display the content. I will be buidling multiple blogs and digital magazines, so I need a way to create site by adjusting some Sass variables and quickly get something up.  The word Rosa either means rose (flower) or pink (color) depending on the context. The name has two inside meanings for me, the first one is that Rosa was my grandmother’s name, and the second is that I’m from Florida, spanish word that literally means “full of flowers”. I’m hoping to get the Florida Dev community to do more open source projects that are flower related.
+I decided to create Rosa.js because I got really interested on content media and on how to display the content. I will be building multiple blogs and digital magazines, so I need a way to create site by adjusting some Sass variables and quickly get something up.  The word Rosa either means rose (flower) or pink (color) depending on the context. The name has two inside meanings for me, the first one is that Rosa was my grandmother’s name, and the second is that I’m from Florida,  a Spanish word that literally means “full of flowers”. I’m hoping to get the Florida Dev community to do more open source projects that are flower related.
 
 
-**Level of opination 1–10 (5)** 
+**Level of opinion 1–10 (5)** 
 Enough flexibility, but with basic guidance.
 
 
 ### Getting Started
-I recomend doing the manual setup so you understand a bit better of how everything works so you can your hands dirty. If you are in a hurry or in a hack-athon, just do the automatic setup. I am using Ghost CSM, mainly because I want to keep my whole stack in Javascript at the moment, but feel free to change your CMS by editing the gulpfile on the manual setup. 
+I recommend doing the manual setup so you understand a bit better of how everything works, and so you can your hands dirty. If you are in a hurry or if you are doing a *’Hackathon’* just do the automatic setup. I’m using Ghost CSM, mainly because I want to keep my whole stack in Javascript at the moment, but feel free to change your CMS by editing the `gulpfile.js` on the manual setup. 
 
 ##### Automatic Setup
 - Clone the repo: `git clone https://github.com/lulato/rosa.js.git`
@@ -21,12 +21,18 @@ I recomend doing the manual setup so you understand a bit better of how everythi
 
 
 ##### Manual Setup
-Browsersync will help me with the auto-refresh in multiple devices, so I can see the chages in real time in the phone.
-Sass will help me devide the stylesheets into smaller files for each of it’s purposes.
+If you start from an empty folder and using `npm` to install all your dependencies, you will likely end  up in the same place. I just like showing people the process so they can see all parts working on the theme builder.
+
+Gulp will be the glue here
+`npm install gulp --save-dev`
+`npm install browsersync --save-dev`
+
+`Browsersync` will help me with the auto-refresh in multiple devices, so I can see the changes in real time in the phone.
+Sass will help us divide the stylesheets into smaller files for each of it’s purposes.
 I use neat from bourbon to set up basic grid. (Optional)
 
 
-Ghost Theme Folder Structure
+##### Ghost Theme Folder Structure
 Documentation
 The themes for Ghost is in the content folder, 
 Ghost uses Handlebars
@@ -61,10 +67,10 @@ This process our Sass files and compiles into one css file where
 
 
 Upgrades
-Depending when you are dowloading this project, you might have to upgrade from one ghost version to another.
+Depending when you are downloading this project, you might have to upgrade from one ghost version to another.
 
-espinas.db
-It’s sample database of photos and articles from wikipedia and unsplash for the purpose of testing and developing the themes.
+##### espinas.db
+Espinas is sample database of photos and articles from wikipedia and unsplash for the purpose of testing and developing the themes.
 Admin Credential
 holaboyperu@hotmail.com
 123456789
@@ -72,17 +78,17 @@ holaboyperu@hotmail.com
 
 Editing the theme
 
-When building a theme in general I have general flow on how I like to aproach things, hopefully my flow helps you develop your own unique sites faster and more beautifil using this theme builder.
+When building a theme in general I have general flow on how I like to approach things, hopefully my flow helps you develop your own unique sites faster and more beautiful using this theme builder.
 
 Typography
-70–80 percent of a website is typography. Thats what I usually tackle first. You can do this by previewing the post.hbs using the dummy database included called espinas.db
+70–80 percent of a website is typography. Thats what I usually tackle first. You can do this by previewing the `post.hbs` using the dummy database included called `espinas.db`
 
 Red Rose Theme; For Articles
 Details if you are upgrading.
 Duplicate Casper folder, Name it your Theme Name 
 Duplicate the Sass folder. Name it your Theme Name Sass
 
-Adjust the Gulpfile.js accordantly
+Adjust the `gulpfile.js` accordantly
 
 SCRIPT
 Replace ghost-dev.db
