@@ -14,10 +14,10 @@ I decided to create `Rosa.js` because I got really interested on content media a
 Enough flexibility, but with basic guidance.
 
 #### Status
-This is my first time open sourcing anything so this could be considered 0.0.1, I have tested this a little bit so don't worry.
+This is my first time open sourcing anything, so this could be considered 0.0.1, I have tested this a little bit so don't worry [CHANGELOG.md](https://github.com/lulato/rosa.js/blob/master/CHANGELOG.md).
 
 ## Install
----
+
 ### Getting Started
 I recommend doing the manual setup so you understand a bit better of how everything works, and so you can your hands dirty. If you are in a hurry or if you are doing a *’Hackathon’* just do the automatic setup. I’m using Ghost CSM, mainly because I want to keep my whole stack in Javascript at the moment, but feel free to change your CMS by editing the `gulpfile.js` on the manual setup. 
 
@@ -90,8 +90,6 @@ Bourbon Github
 
 Upgrades
 Depending when you are downloading this project, you might have to upgrade from one ghost version to another.
-
-
 
 
 Editing the theme
