@@ -1,20 +1,23 @@
 # Rosa.js Project
 
 Rosa.js is a CMS theme builder using Gulp Sass Bourbon.
-![rosa-roja.js](https://raw.githubusercontent.com/lulato/rosa.js/master/rosa-roja-source/static-assets/rosa.js.jpeg)
-Photo by [João Silas](https://unsplash.com/photos/Z5M06BfTTkc),
-Edited by [Rirod](https://www.instagram.com/rirod180/)
 
 ### Story
 
 I decided to create `Rosa.js` because I got really interested on content media and on how to display the content. I will be building multiple blogs and digital magazines, so I need a way to create site by adjusting some Sass variables and quickly get something up.  The word Rosa either means rose (flower) or pink (color) depending on the context. The name has two inside meanings for me, the first one is that Rosa was my grandmother’s name, and the second is that I’m from Florida,  a Spanish word that literally means “full of flowers”. I’m hoping to get the Florida Dev community to do more open source projects that are flower related.
-
+![rosa-roja.js](https://raw.githubusercontent.com/lulato/rosa.js/master/rosa-roja-source/static-assets/rosa.js.jpeg)
+Photo by [João Silas](https://unsplash.com/photos/Z5M06BfTTkc),
+Edited by [Rirod](https://www.instagram.com/rirod180/)
 
 **Level of opinion 1–10 (5)** 
 Enough flexibility, but with basic guidance.
 
 #### Status
 This is my first time open sourcing anything, so this could be considered 0.0.1, I have tested this a little bit so don't worry [CHANGELOG.md](https://github.com/lulato/rosa.js/blob/master/CHANGELOG.md).
+
+#### Me
+I'm Luis Ricardo La Torre, a Product Designer in Miami Beach, FL. [lulato.com](http://lulato.com), and you should definelty say `hi` on [Twitter](https://twitter.com/TheLuisLaTorre)
+
 
 ## Install
 
@@ -85,11 +88,11 @@ This process our Sass files and compiles into one css file where
     });
 
 
+Ghost Theme Docs
 Bourbon Docs
-Bourbon Github
 
 Upgrades
-Depending when you are downloading this project, you might have to upgrade from one ghost version to another.
+Depending when you are downloading this project, you might have to upgrade from one ghost version to another, check the [CHANGELOG](https://github.com/lulato/rosa.js/blob/master/CHANGELOG.md).
 
 
 Editing the theme
@@ -106,11 +109,6 @@ Duplicate the Sass folder. Name it your Theme Name Sass
 
 Adjust the `gulpfile.js` accordantly
 
-SCRIPT
-Replace ghost-dev.db
-This can be done in a script by asking Danny
-duplicate the folder called casper 
-rename casper copy rosa-roja
 
 
 ## Contribute
