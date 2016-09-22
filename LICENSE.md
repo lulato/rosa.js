@@ -1,6 +1,5 @@
 The MIT License (MIT)
 
-Copyright (c) 2016-2016 Lulato, LLC.
 Copyright (c) 2016-2016 Luis Ricardo La Torre.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
