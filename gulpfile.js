@@ -19,12 +19,6 @@ gulp.task('styles', function () {
 });
 
 
-
-// gulp.task('styles', function () {
-//   console.log("STYLE TASK WORKING");
-// });
-
-
 gulp.task('scripts', function() {
   console.log("STYLE TASK WORKING");
 });
@@ -33,8 +27,6 @@ gulp.task('scripts', function() {
 gulp.task("watch", function(){
   console.log("WATCH TASK WORKING");
 });
-
-
 
 
 // let's sync with browserSync
