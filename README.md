@@ -15,7 +15,7 @@ Enough flexibility, but with basic guidance.
 I recomend doing the manual setup so you understand a bit better of how everything works so you can your hands dirty. If you are in a hurry or in a hack-athon, just do the automatic setup. I am using Ghost CSM, mainly because I want to keep my whole stack in Javascript at the moment, but feel free to change your CMS by editing the gulpfile on the manual setup. 
 
 ##### Automatic Setup
-- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
+- Clone the repo: `git clone https://github.com/lulato/rosa.js.git`
 - Run: `npm install`
 - Run: `gulp`
 
