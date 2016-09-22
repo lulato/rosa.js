@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "duplicatetheme": "cp -R  node_modules/ghost/content/themes/casper/ node_modules/ghost/content/themes/casper-copy/",
     "renametheme": "mv casper-copy rosa-roja",
-    "postinstall": "npm run duplicatetheme && npm run renametheme"
+    "movedb": "mv espinas.db node_modules/ghost/content/data/",
+    "postinstall": "npm run duplicatetheme && npm run renametheme && npm run movedb"
   },
   "repository": {
     "type": "git",
