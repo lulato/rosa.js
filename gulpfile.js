@@ -10,11 +10,13 @@ var reload = browserSync.reload;
 // Gulp Task that compiles Sass files.
 gulp.task('styles', function () {
 
-    return gulp.src('rosa-roja-source/styles-sass/**/*.scss')
+    // return gulp.src('rosa-roja-source/styles-sass/**/*.scss')
+    return gulp.src('rosa-rosa-source/styles-sass/**/*.scss')
         .pipe(sass({
             includePaths: ['styles'].concat(neat)
         }))
-        .pipe(gulp.dest('node_modules/ghost/content/themes/rosa-roja/assets/css'))
+        .pipe(gulp.dest('node_modules/ghost/content/themes/rosa-rosa/assets/css'))
+        // .pipe(gulp.dest('node_modules/ghost/content/themes/rosa-roja/assets/css'))
         .pipe(reload({stream:true}));
 });
 
@@ -25,7 +27,8 @@ gulp.task('scripts', function() {
 
 // watches 
 gulp.task("watch", function(){
-  console.log("WATCH TASK WORKING");
+  gulp.watch('rosa-roja-source/styles-sass/**/*.scss', ['styles']);
+  gulp.watch('rosa-rosa-source/styles-sass/**/*.scss', ['styles']);
 });
 
 
