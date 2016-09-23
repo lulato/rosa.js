@@ -1,0 +1,129 @@
+.cards {
+  $medium-screen: em(640);
+  $large-screen: em(860);
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  // background-color: red;
+  // @include media($medium-screen) {
+  //   @include span-columns(10);
+  // }
+}
+
+.card {
+  $base-border-color: ghostwhite !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #c1c1c1;
+  $base-font-color: $dark-gray;
+  $card-border-color: $base-border-color;
+  $card-border: 1px solid $card-border-color;
+  $card-background: white;
+  $card-header-background: $card-background;
+  $card-margin: 0.5em;
+  $card-image-hover-opacity: 0.7;
+  $card-image-hover-color: #c1c1c1;
+
+  $medium-screen: em(640);
+  $large-screen: em(860);
+
+  @include media($medium-screen) {
+    @include span-columns(7);
+  }
+  @include media($large-screen) {
+    @include span-columns(12);
+  }
+
+
+  @include flex-basis(15em);
+  @include flex-grow(1);
+  @include transition (all 0.2s ease-in-out);
+  background-color: $card-background;
+  // border-radius: $base-border-radius;
+  border: $card-border;
+  // box-shadow: 0 2px 4px darken($base-background-color, 10%);
+  cursor: pointer;
+  margin: 0 $card-margin $base-spacing $card-margin;
+  position: relative;
+
+
+
+  .card-image {
+    overflow: hidden;
+    height: 190px;
+    max-height: 200px;
+    background-color: $card-image-hover-color;
+
+    img {
+      @include transition (all 0.2s ease-in-out);
+      // border-top-left-radius: $base-border-radius;
+      // border-top-right-radius: $base-border-radius;
+      min-height: 31vh;
+      background-size: cover;
+      // height: 31vh;
+      width: 100%;
+      opacity: 1;
+      @include media($medium-screen) {
+        min-height: 22vh;
+      }
+      @include media($large-screen) {
+        min-height: 22vh;
+      }
+    }
+  }
+
+  .card-header {
+    @include transition (all 0.2s ease-in-out);
+    background-color: $card-header-background;
+    border-bottom: $card-border;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    font-weight: 800;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    padding: ($base-spacing / 3) ($base-spacing / 2);
+
+    a {
+      color: black;
+    }
+  }
+
+  .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: ($base-spacing / 2) ($base-spacing / 2);
+
+    p {
+      margin: 0 0 ($base-spacing / 2);
+    }
+    .tags a {
+      $badge-font-size: 0.85em;
+      background-color: #CE8929;
+      // border-radius: $badge-font-size * 2;
+      font-size: $badge-font-size;
+      color: white;
+      padding: 0.4em 1em;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+
+    img {
+      opacity: $card-image-hover-opacity;
+    }
+  }
+
+  &:active {
+    background-color: $card-background;
+
+    .card-header {
+      background-color: $card-background;
+    }
+  }
+}
+
+
+

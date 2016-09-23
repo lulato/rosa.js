@@ -1,0 +1,250 @@
+.home-template {
+  background-color: #FAFAFA;
+}
+
+// this needs to be moved
+.main-header {
+  height: 31vh;
+  background: #a1a1a1 no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 2.5em;
+
+}
+.vertical{
+    @include outer-container;
+    padding: 2em;
+    .page-title {
+      font-size: 1.8em;
+      color: $blue;
+      text-transform: uppercase;
+    }
+}
+
+
+.content {
+  @include outer-container;
+  // background-color: green;
+}
+
+
+// -------------------
+// hero
+
+.image-gradient-dynamic {
+  $image-gradient-color-top: blue; 
+  $transparency-top: 0.9;
+  $image-gradient-color-bottom: red; 
+  $transparency-bottom: 0.6;
+  $vertical-angle: 0deg;
+  $image-gradient-color-left: teal; 
+  $transparency-left: 0.8;
+  $image-gradient-color-right: yellow; 
+  $transparency-right: 0.8;
+  $horizontal-angle: 90deg;
+  $large-screen: em(860) !default;
+  
+  line-height: 0;
+  position: relative;
+  width: 100%;
+
+  img {
+   height: auto;
+   left: 0; 
+   position: relative;
+   top: 0;
+   width: 100%;
+  }
+
+  .copy {
+    @include transform(translate(-50%, -50%));
+    left: 40%;
+    margin: auto;
+    position: absolute;
+    // text-align: center;
+    top: 60%;
+    z-index: 999;
+    h1 {
+        color: white;
+        font-size: 1.6em;
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+    }
+    p {
+      color: white;
+      line-height: 1.5em;
+      padding: 1em 2em;
+      position: relative;
+    }
+  }
+
+  .overlay {
+    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top), 
+      transparentize($image-gradient-color-bottom, $transparency-bottom));
+    display: block;
+    @include position(absolute, 0px 0px 0px 0px);
+
+    &:after {
+      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left), 
+        transparentize($image-gradient-color-right, $transparency-right));
+      @include position(absolute, 0px 0px 0px 0px);
+      content: '';
+      display: block;
+    }
+  }
+}
+
+/* ----------------- */
+
+.hero {  
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  $hero-background-top: #7F99BE; 
+  $hero-background-bottom: #20392B;
+  $hero-color: white;
+  $gradient-angle: 10deg;
+  $hero-image: 'http://crizaze.com/wp-content/uploads/2014/12/modeling-agency.jpg';
+
+  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  background-color: red;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    margin: auto;
+    padding: 3.5em;
+    // text-align: center;
+
+    .hero-copy {
+      // text-align: center;
+      
+      h1 {
+        color: $hero-color;
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+      }
+
+      p {
+        color: $hero-color;
+        line-height: 1.4em;
+        margin: 0 auto 3em auto; 
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 40%;
+        }
+      }
+    }
+  }
+}
+
+
+
+// 
+// 
+// 
+
+
+.articles {
+  padding-top: 1em;
+
+}
+
+.sidebar {
+  $medium-screen: em(640) !default;
+  $large-screen: em(860);
+  @include media($medium-screen) {
+    @include span-columns(4);
+  }
+
+  @include media($large-screen) {
+    @include span-columns(4);
+  }
+}
+
+
+
+.tags {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pagination {  
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $pagination-border-color: $base-border-color;
+  $pagination-border: 1px solid $pagination-border-color;
+  $pagination-background: lighten($pagination-border-color, 10);
+  $pagination-hover-background: lighten($pagination-background, 5);
+  $pagination-color: $base-font-color;
+
+  @include span-columns(12);
+
+  text-align: center;
+  margin-bottom: 1.5em;
+
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+    li {
+      display: inline;
+      list-style: none;
+    }
+
+    ul li {
+      display: none;
+      
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: inline;
+      }
+
+      @include media($large-screen) {
+        display: inline;
+      }
+    }
+
+    li a {
+      @include transition (all 0.2s ease-in-out);
+      background: $pagination-background;
+      border-radius: $base-border-radius;
+      border: $pagination-border;
+      color: $pagination-color;
+      outline: none;
+      padding: ($base-spacing / 4) ($gutter / 2);
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        background: $pagination-hover-background;
+        color: $action-color;
+      }
+
+      &:active {
+        background: $pagination-background;
+      }
+    }
+  }
+}

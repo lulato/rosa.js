@@ -6,6 +6,14 @@ var browserSync = require('browser-sync'); // Reloads the browser when I save.
 var reload = browserSync.reload;
 
 
+//  Gulp Task that mirrors the handlebar folder
+gulp.task('html', function () {
+
+    return gulp.src('rosa-rosa-source/structure-html-md/**/*.hbs')
+        .pipe(gulp.dest('node_modules/ghost/content/themes/rosa-rosa/'))
+        .pipe(reload({stream:true}));
+});
+
 
 // Gulp Task that compiles Sass files.
 gulp.task('styles', function () {
@@ -27,7 +35,7 @@ gulp.task('scripts', function() {
 
 // watches 
 gulp.task("watch", function(){
-  gulp.watch('rosa-roja-source/styles-sass/**/*.scss', ['styles']);
+  gulp.watch('rosa-rosa-source/structure-html-md/**/*.hbs', ['html']);
   gulp.watch('rosa-rosa-source/styles-sass/**/*.scss', ['styles']);
 });
 
@@ -41,7 +49,7 @@ gulp.task('browser-sync', function() {
 
 
 // this wraps everything and loads the ghost server
-gulp.task('ghost', ['styles', 'scripts','browser-sync','watch'], function() {  
+gulp.task('ghost', ['html','styles', 'scripts','browser-sync','watch'], function() {  
     var ghost = require('ghost');
     process.env.NODE_ENV = 'development';
     ghost({ config: __dirname + '/ghost-config.js' }).then(function (ghostServer) {
